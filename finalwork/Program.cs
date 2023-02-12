@@ -3,3 +3,12 @@
 // При решении не рек. использовать коллекции, лучше обойтись исключительно массивами.
 // Примеры:
 // ["hello","2","world",":-)"] -> ["2",":-)"]
+
+string[] array1 = new string[4];
+void PrintArray(string [] arr)
+{
+    string [] array = {"hello","2","world",":-)"};
+    Console.Write("Начальный массив: "+"[" + string.Join(", ", array) +"]");
+
+}
+PrintArray(array1);
