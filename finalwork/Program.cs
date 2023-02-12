@@ -12,3 +12,19 @@ void PrintArray(string [] arr)
 
 }
 PrintArray(array1);
+Console.WriteLine();
+Console.WriteLine("Введите необходимое количество элементов от 1 до 3х:");
+int n = Convert.ToInt32(Console.ReadLine());
+string[] array2 = new string[n];
+
+for (int i = 0; i < n; i++)
+{
+    string s;
+    Console.Write("Введите элемент из начального массива: ");
+    s = Console.ReadLine();
+    if (s!=" ")
+    {
+        array2[i]= s;
+    }
+}
+Console.Write("Конечный массив: "+ "[" + string.Join(", ", array2) + "]");
